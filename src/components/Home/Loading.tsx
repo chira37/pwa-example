@@ -1,8 +1,6 @@
 import React from "react";
 
-interface LoadingProps {}
-
-const Loading: React.FC<LoadingProps> = ({}) => {
+const Loading: React.FC = () => {
     return (
         <div className="flex h-screen justify-center items-center">
             <div
