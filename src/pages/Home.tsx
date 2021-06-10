@@ -7,8 +7,6 @@ import { CSSTransition } from "react-transition-group";
 import wine_1 from "../assets/wine_1.jpg";
 import wine_2 from "../assets/wine_2.jpg";
 
-interface HomeProps {}
-
 interface IClubPackages {
     name: string;
     price: string;
@@ -20,7 +18,7 @@ const clubPackages: IClubPackages[] = [
     { name: "Twelve Bottle Club", price: "500$-600$/ship" },
 ];
 
-const Home: React.FC<HomeProps> = ({}) => {
+const Home: React.FC = () => {
     const [activeCard, setActiveCard] = useState<number>(1);
     const [loading, setLoading] = useState(true);
 
